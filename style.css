@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&display=swap");
+
+:root {
+    /* ── Typography ──────────────────────────────── */
+    --font-primary: "Lato", sans-serif;
+
+    /* Font weight */
+    --font-weight-bold: 700;
+    --font-weight-semibold: 600;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+
+    /* Font size — Heading */
+    --font-size-h1: 48px;
+    --font-size-h2: 40px;
+    --font-size-h3: 32px;
+    --font-size-h4: 24px;
+    --font-size-h5: 20px;
+    --font-size-h6: 18px;
+
+    /* Font size — Body */
+    --font-size-body-lg: 18px;
+    --font-size-body-md: 16px;
+    --font-size-body-sm: 14px;
+
+    /* ── Colors — Main ───────────────────────────── */
+    --color-primary: #3ECF4C; /* Green — brand utama */
+    --color-primary-400: #6BE26B;
+    --color-primary-300: #94F08B;
+    --color-primary-200: #C0FAB4;
+    --color-primary-100: #E2FCD9CC;
+    --color-secondary: #FFBD3A; /* Orange — logo aksen */
+    --color-secondary-400: #FFD26B;
+    --color-secondary-300: #FFDF88;
+    --color-secondary-200: #FFECB0;
+    --color-secondary-100: #FFF7D7CC;
+    --color-tertiary: #F64920; /* Red — logo aksen merah */
+    --color-tertiary-400: #F98256;
+    --color-tertiary-300: #FCA578;
+    --color-tertiary-200: #FECAA5;
+    --color-tertiary-100: #FEE8D2CC;
+
+    /* ── Colors — Text Dark ──────────────────────── */
+    --color-text-dark-primary: #222325;
+    --color-text-dark-secondary: #333333AD;
+    --color-text-dark-disabled: #3A354161;
+
+    /* ── Colors — Text Light ─────────────────────── */
+    --color-text-light-primary: #FFFFFF;
+    --color-text-light-secondary: #C1C2C4;
+    --color-text-light-disabled: #9D9EA1;
+
+    /* ── Colors — Background ─────────────────────── */
+    --color-bg-primary: #FFFFFF;
+    --color-bg-base: #F4F5FA;
+    --color-bg-secondary: #F9FAFC;
+
+    /* ── Colors — Border ─────────────────────────── */
+    --color-border: #3A35411F;
+
+    /* ── Colors — Info ───────────────────────────── */
+    --color-info-default: #0980E2;
+    --color-info-hover: #0663C2;
+    --color-info-pressed: #044AA2;
+    --color-info-background: #EBF9FE;
+
+    /* ── Colors — Success ────────────────────────── */
+    --color-success-default: #38D189;
+    --color-success-hover: #28B380;
+    --color-success-pressed: #1C9675;
+    --color-success-background: #E0FDDF;
+
+    /* ── Colors — Warning ────────────────────────── */
+    --color-warning-default: #FCE91B;
+    --color-warning-hover: #D8C613;
+    --color-warning-pressed: #B5A40D;
+    --color-warning-background: #FCF8CA;
+
+    /* ── Colors — Error ──────────────────────────── */
+    --color-error-default: #FF5C2B;
+    --color-error-hover: #DB3D1F;
+    --color-error-pressed: #B72315;
+    --color-error-background: #FCE3D1;
+
+    /* ── Colors — Greyscale ──────────────────────── */
+    --color-grey-900: #212121;
+    --color-grey-800: #424242;
+    --color-grey-700: #616161;
+    --color-grey-600: #757575;
+    --color-grey-500: #9E9E9E;
+    --color-grey-400: #BDBDBD;
+    --color-grey-300: #E0E0E0;
+    --color-grey-200: #EEEEEE;
+    --color-grey-100: #F5F5F5;
+    --color-grey-50: #FAFAFA;
+
+    /* ── Colors — Gradients ──────────────────────── */
+    --gradient-info: linear-gradient(135deg, #6F9EFF, #004CE8);
+    --gradient-success: linear-gradient(135deg, #73FFA6, #00C247);
+    --gradient-warning: linear-gradient(135deg, #FFE58036, #FFE16A);
+    --gradient-error: linear-gradient(135deg, #FF8A9B, #FF3333);
+    --gradient-brand: linear-gradient(90deg, #f97316, #ef4444); /* logo */
+
+    /* ── Spacing ─────────────────────────────────── */
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 20px;
+    --space-6: 24px;
+    --space-8: 32px;
+    --space-10: 40px;
+    --space-12: 48px;
+
+    /* ── Border radius ───────────────────────────── */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --radius-full: 9999px; /* pill / chip */
+
+    /* ── Shadow ──────────────────────────────────── */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+
+    /* ── Transition ──────────────────────────────── */
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.image-fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
