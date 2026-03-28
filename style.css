@@ -129,6 +129,89 @@
     --transition-normal: 250ms ease;
 }
 
+/* ── Text — Main ───────────────────────── */
+.text-primary           { color: var(--color-primary);   }
+.text-primary-400       { color: var(--color-primary-400);   }
+.text-primary-300       { color: var(--color-primary-300);   }
+.text-secondary         { color: var(--color-secondary); }
+.text-secondary-400     { color: var(--color-secondary-400); }
+.text-secondary-300     { color: var(--color-secondary-300); }
+.text-tertiary          { color: var(--color-tertiary);  }
+.text-tertiary-400      { color: var(--color-tertiary-400);  }
+.text-tertiary-300      { color: var(--color-tertiary-300);  }
+
+/* ── Text — Dark ───────────────────────── */
+.text-dark              { color: var(--color-text-dark-primary);   }
+.text-dark-secondary    { color: var(--color-text-dark-secondary); }
+.text-dark-disabled     { color: var(--color-text-dark-disabled);  }
+
+/* ── Text — Light ──────────────────────── */
+.text-light             { color: var(--color-text-light-primary);   }
+.text-light-secondary   { color: var(--color-text-light-secondary); }
+.text-light-disabled    { color: var(--color-text-light-disabled);  }
+
+/* ── Text — Semantic ───────────────────── */
+.text-info              { color: var(--color-info-default);    }
+.text-success           { color: var(--color-success-default); }
+.text-warning           { color: var(--color-warning-default); }
+.text-error             { color: var(--color-error-default);   }
+
+/* ── Text — Greyscale ──────────────────── */
+.text-grey-900          { color: var(--color-grey-900); }
+.text-grey-800          { color: var(--color-grey-800); }
+.text-grey-700          { color: var(--color-grey-700); }
+.text-grey-600          { color: var(--color-grey-600); }
+.text-grey-500          { color: var(--color-grey-500); }
+.text-grey-400          { color: var(--color-grey-400); }
+.text-grey-300          { color: var(--color-grey-300); }
+
+/* ── Background — Main ─────────────────── */
+.bg-primary         { background-color: var(--color-primary);       }
+.bg-primary-400     { background-color: var(--color-primary-400);   }
+.bg-primary-300     { background-color: var(--color-primary-300);   }
+.bg-primary-200     { background-color: var(--color-primary-200);   }
+.bg-primary-100     { background-color: var(--color-primary-100);   }
+.bg-secondary       { background-color: var(--color-secondary);     }
+.bg-secondary-400   { background-color: var(--color-secondary-400); }
+.bg-secondary-300   { background-color: var(--color-secondary-300); }
+.bg-secondary-200   { background-color: var(--color-secondary-200); }
+.bg-secondary-100   { background-color: var(--color-secondary-100); }
+.bg-tertiary        { background-color: var(--color-tertiary);      }
+.bg-tertiary-400    { background-color: var(--color-tertiary-400);  }
+.bg-tertiary-300    { background-color: var(--color-tertiary-300);  }
+.bg-tertiary-200    { background-color: var(--color-tertiary-200);  }
+.bg-tertiary-100    { background-color: var(--color-tertiary-100);  }
+
+/* ── Background — Base ─────────────────── */
+.bg-base            { background-color: var(--color-bg-base);      }
+.bg-white           { background-color: var(--color-bg-primary);   }
+.bg-surface         { background-color: var(--color-bg-secondary); }
+
+/* ── Background — Semantic ─────────────── */
+.bg-info            { background-color: var(--color-info-background);    }
+.bg-success         { background-color: var(--color-success-background); }
+.bg-warning         { background-color: var(--color-warning-background); }
+.bg-error           { background-color: var(--color-error-background);   }
+
+/* ── Background — Greyscale ────────────── */
+.bg-grey-900        { background-color: var(--color-grey-900); }
+.bg-grey-800        { background-color: var(--color-grey-800); }
+.bg-grey-700        { background-color: var(--color-grey-700); }
+.bg-grey-600        { background-color: var(--color-grey-600); }
+.bg-grey-500        { background-color: var(--color-grey-500); }
+.bg-grey-400        { background-color: var(--color-grey-400); }
+.bg-grey-300        { background-color: var(--color-grey-300); }
+.bg-grey-200        { background-color: var(--color-grey-200); }
+.bg-grey-100        { background-color: var(--color-grey-100); }
+.bg-grey-50         { background-color: var(--color-grey-50);  }
+
+/* ── Background — Gradient ─────────────── */
+.bg-gradient-info    { background: var(--gradient-info);    }
+.bg-gradient-success { background: var(--gradient-success); }
+.bg-gradient-warning { background: var(--gradient-warning); }
+.bg-gradient-error   { background: var(--gradient-error);   }
+.bg-gradient-brand   { background: var(--gradient-brand);   }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -139,8 +222,148 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #FFFDF3;
+    font-family: var(--font-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
 .image-fit {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-bg-primary);
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.logo {
+    width: 237px;
+    height: 56px;
+}
+
+.auth-container {
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.auth-form {
+    width: 590px;
+    padding: 36px;
+    border: 1px solid #F1F1F1;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+}
+
+.desc > h3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: 10px;
+}
+
+.desc-color {
+    color: var(--color-text-dark-secondary);
+    font-size: var(--font-size-body-md);
+    font-weight: var(--font-weight-regular);
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: var(--font-weight-regular);
+    color: #4A505C;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.red {
+    color: #D32E1F;
+}
+
+input {
+    width: 100%;
+    border: 1px solid var(--color-border);
+    height: 48px;
+    border-radius: 6px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.eye {
+    position: absolute;
+    top: calc(24px - 12px);
+    right: 12px;
+    color: #6C717A;
+    cursor: pointer;
+}
+
+.forgot {
+    color: #4A505C;
+}
+
+.btn-full {
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        width: 152px;
+        height: 42px;
+    }
+
+    .navbar {
+        padding: 0 24px;
+        height: 74px;
+    }
+
+    .auth-form {
+        width: 320px;
+        padding: 20px;
+    }
+
+    .auth-container {
+        padding: 28px 20px;
+    }
+
+    .desc-color, label {
+        font-size: var(--font-size-body-sm);
+        font-weight: var(--font-weight-regular);
+    }
+
+    .desc {
+        margin-bottom: 20px;
+    }
 }

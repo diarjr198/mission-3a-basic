@@ -1,11 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>videobelajar</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>videobelajar</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"
+                    ><img class="image-fit" src="assets/logo.png" alt=""
+                /></a>
+            </div>
+        </nav>
+        <main class="auth-container">
+            <div class="auth-form">
+                <div class="desc">
+                    <h3>Masuk ke Akun</h3>
+                    <h5 class="desc-color">
+                        Yuk, lanjutin belajarmu di videobelajar.
+                    </h5>
+                </div>
+                <div class="form-group">
+                    <label for="email"
+                        >E-mail <strong class="red">*</strong></label
+                    >
+                    <input type="text" name="email" />
+                </div>
+                <div class="form-group">
+                    <label for="email"
+                        >Kata Sandi <strong class="red">*</strong></label
+                    >
+                    <div class="input-group">
+                        <input type="text" name="password" />
+                        <svg
+                            class="eye"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M2 5.27L3.28 4L20 20.72L18.73 22l-3.08-3.08c-1.15.38-2.37.58-3.65.58c-5 0-9.27-3.11-11-7.5c.69-1.76 1.79-3.31 3.19-4.54zM12 9a3 3 0 0 1 3 3a3 3 0 0 1-.17 1L11 9.17A3 3 0 0 1 12 9m0-4.5c5 0 9.27 3.11 11 7.5a11.8 11.8 0 0 1-4 5.19l-1.42-1.43A9.86 9.86 0 0 0 20.82 12A9.82 9.82 0 0 0 12 6.5c-1.09 0-2.16.18-3.16.5L7.3 5.47c1.44-.62 3.03-.97 4.7-.97M3.18 12A9.82 9.82 0 0 0 12 17.5c.69 0 1.37-.07 2-.21L11.72 15A3.064 3.064 0 0 1 9 12.28L5.6 8.87c-.99.85-1.82 1.91-2.42 3.13"
+                            />
+                        </svg>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <a class="forgot" href="#">Lupa Password?</a>
+                </div>
+                <button
+                    class="btn-full bg-primary text-light"
+                    style="margin-bottom: 16px"
+                >
+                    Masuk
+                </button>
+                <button class="btn-full bg-primary-100 text-primary">
+                    Daftar
+                </button>
+                <div style="display: flex; align-items: center; margin: 24px 0">
+                    <hr style="flex: 1;border: none; border-top: 2px solid #F1F1F1;" />
+                    <span style="margin: 0 10px;font-size: 16px;font-weight: 400;">atau</span>
+                    <hr style="flex: 1;border: none; border-top: 2px solid #F1F1F1;" />
+                </div>
+                <button
+                    class="btn-full"
+                    style="
+                        border: 1px solid #F1F1F1;
+                        background-color: inherit;
+                        color: #4a505c;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    "
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 16 16"
+                    >
+                        <g fill="none" fill-rule="evenodd" clip-rule="evenodd">
+                            <path
+                                fill="#f44336"
+                                d="M7.209 1.061c.725-.081 1.154-.081 1.933 0a6.57 6.57 0 0 1 3.65 1.82a100 100 0 0 0-1.986 1.93q-1.876-1.59-4.188-.734q-1.696.78-2.362 2.528a78 78 0 0 1-2.148-1.658a.26.26 0 0 0-.16-.027q1.683-3.245 5.26-3.86"
+                                opacity="0.987"
+                            />
+                            <path
+                                fill="#ffc107"
+                                d="M1.946 4.92q.085-.013.161.027a78 78 0 0 0 2.148 1.658A7.6 7.6 0 0 0 4.04 7.99q.037.678.215 1.331L2 11.116Q.527 8.038 1.946 4.92"
+                                opacity="0.997"
+                            />
+                            <path
+                                fill="#448aff"
+                                d="M12.685 13.29a26 26 0 0 0-2.202-1.74q1.15-.812 1.396-2.228H8.122V6.713q3.25-.027 6.497.055q.616 3.345-1.423 6.032a7 7 0 0 1-.51.49"
+                                opacity="0.999"
+                            />
+                            <path
+                                fill="#43a047"
+                                d="M4.255 9.322q1.23 3.057 4.51 2.854a3.94 3.94 0 0 0 1.718-.626q1.148.812 2.202 1.74a6.62 6.62 0 0 1-4.027 1.684a6.4 6.4 0 0 1-1.02 0Q3.82 14.524 2 11.116z"
+                                opacity="0.993"
+                            />
+                        </g></svg
+                    >&nbsp;Masuk dengan Google
+                </button>
+            </div>
+        </main>
+    </body>
 </html>
